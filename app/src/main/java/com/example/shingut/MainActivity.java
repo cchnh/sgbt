@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 //안녕###
     //안녕친구들
 
-//김대현 수정
+//김대현 수정했음
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
