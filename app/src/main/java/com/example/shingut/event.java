@@ -15,29 +15,13 @@ import com.example.shingut.R;
 public class event extends MainActivity {
     Toolbar toolbar;
     ImageButton home;
-    View.OnClickListener cl;
-    Intent i;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.tool_bar);
+        setContentView(R.layout.event);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        home = (ImageButton) findViewById(R.id.home);
-
-        cl = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                switch ( v.getId() ) {
-                    case R.id.home :
-                        i = new Intent(getApplicationContext(), MainActivity.class);
-                        startActivity(i);
-                        break;
-                }
-            }
-        };
-        home.setOnClickListener(cl);
-
+        home = (ImageButton) findViewById(R.id.toolbar_image);
 
     }
 }
