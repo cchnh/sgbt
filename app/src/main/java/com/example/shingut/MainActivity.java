@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         b2 = (Button) findViewById(R.id.button2);
         b3 = (Button) findViewById(R.id.button3);
         b4 = (Button) findViewById(R.id.button4);
-
+       //남훈
         cl = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
