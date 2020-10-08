@@ -19,7 +19,9 @@ public class MainActivity extends AppCompatActivity {
     Button b1, b2,b3,b4;
     View.OnClickListener cl;
     Intent i,i1;
-//안녕@#@#@#찹찹ㅊ바
+//안녕###
+    //안녕친구들
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
