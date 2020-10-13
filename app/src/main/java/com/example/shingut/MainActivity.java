@@ -58,8 +58,7 @@ public class MainActivity extends AppCompatActivity {
         b1.setOnClickListener(cl);
         b2.setOnClickListener(cl);
         b3.setOnClickListener(cl);
-        b4.setOnClickListener(cl);
-//        home.setOnClickListener(cl);
+
         Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         mVideoview = (VideoView) findViewById(R.id.videoview);
