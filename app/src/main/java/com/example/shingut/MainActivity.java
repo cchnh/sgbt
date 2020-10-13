@@ -8,33 +8,32 @@ import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.VideoView;
-
-import com.example.shingut.R;
 
 public class MainActivity extends AppCompatActivity {
     private String TAG = "VideoActivity";
     private VideoView mVideoview;
-    Button b1, b2,b3,b4;
+    ImageButton b1,b2,b3,b4,home;
     View.OnClickListener cl;
-    Intent i,i1;
+    Intent i;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        b1 = (Button) findViewById(R.id.button1);
-        b2 = (Button) findViewById(R.id.button2);
-        b3 = (Button) findViewById(R.id.button3);
-        b4 = (Button) findViewById(R.id.button4);
+        home= (ImageButton) findViewById(R.id.home);
+        b1 = (ImageButton) findViewById(R.id.button1);
+        b2 = (ImageButton) findViewById(R.id.button2);
+        b3 = (ImageButton) findViewById(R.id.button3);
+        b4 = (ImageButton) findViewById(R.id.button4);
 
         cl = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 switch ( v.getId() ) {
                     case R.id.button1 :
-                        i = new Intent(getApplicationContext(), tool_bar.class);
+                        i = new Intent(getApplicationContext(), smart.class);
                         startActivity(i);
                         break;
                     case R.id.button2 :
@@ -49,6 +48,10 @@ public class MainActivity extends AppCompatActivity {
                         i = new Intent(getApplicationContext(), map.class);
                         startActivity(i);
                         break;
+                    case R.id.home :
+                        i = new Intent(getApplicationContext(), MainActivity.class);
+                        startActivity(i);
+                        break;
                 }
             }
         };
@@ -56,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
         b2.setOnClickListener(cl);
         b3.setOnClickListener(cl);
         b4.setOnClickListener(cl);
+//        home.setOnClickListener(cl);
         Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         mVideoview = (VideoView) findViewById(R.id.videoview);

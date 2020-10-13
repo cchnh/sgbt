@@ -9,7 +9,7 @@ import android.widget.ImageButton;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
 
-public class event extends MainActivity {
+public class smart extends MainActivity {
     Toolbar toolbar;
     ImageButton home;
     View.OnClickListener cl;
@@ -18,7 +18,7 @@ public class event extends MainActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.event);
+        setContentView(R.layout.smart);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         home = (ImageButton) findViewById(R.id.home);
 
@@ -36,5 +36,8 @@ public class event extends MainActivity {
         home.setOnClickListener(cl);
 
 
+
+
     }
+
 }
